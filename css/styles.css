@@ -37,6 +37,10 @@ html {
    margin: 0;
  }
 
+ img{
+   display: block;
+ }
+
 .body {
   background-color: #ffffff;
   font-family: var(--main-font);
@@ -268,6 +272,9 @@ justify-content: space-between;
 
 .footer {
   background-color: var(--background-dark-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-adress-map {
@@ -280,12 +287,19 @@ justify-content: space-between;
 
 .footer-logo {
   color: var(--title-white-color);
+
+  margin-bottom: 20px;
 }
 
 .footer-adress-map,
 .footer-adress-link {
   line-height: 1.71;
 }
+
+.footer-list-item:not(:last-child){
+  margin-bottom: 9px;
+}
+
 
 .btn-filter {
   font-family: var(--main-font);
@@ -317,3 +331,4 @@ justify-content: space-between;
   font-size: 16px;
   line-height: 1.87;
 }
+

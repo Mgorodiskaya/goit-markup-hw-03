@@ -300,8 +300,13 @@ justify-content: space-between;
   margin-bottom: 9px;
 }
 
+.btn-filter-list{
+  display: flex;
+  justify-content: center;
+}
 
-.btn-filter {
+.btn-filter{
+  display: block;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
@@ -311,6 +316,14 @@ justify-content: space-between;
   background-color: #f5f4fa;
   color: var(--title-dark-color);
   cursor: pointer;
+  border: 0px;
+  border-radius: 4px;
+
+  padding: 6px 22px;
+}
+
+.btn-filter-list-item:not(:last-child){
+  margin-right: 7px;
 }
 
 .btn-filter:hover,
@@ -332,3 +345,15 @@ justify-content: space-between;
   line-height: 1.87;
 }
 
+.works-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works-list-item{
+  width: 370px;
+  }
+
+.works-list-item:not(:nth-child(3n)){
+  margin-right: 30px;
+}
